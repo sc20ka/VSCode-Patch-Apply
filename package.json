@@ -1,0 +1,64 @@
+{
+    "name": "vscodepatchapply",
+    "displayName": "VSCodePatchApply",
+    "description": "",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.100.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [],
+    "main": "./out/extension.js",
+    "contributes": {
+        "viewsContainers": {
+            "activitybar": [
+                {
+                    "id": "patch-apply-activitybar",
+                    "title": "Patch Apply",
+                    "icon": "$(compare-changes)"
+                }
+            ]
+        },
+        "views": {
+            "patch-apply-activitybar": [
+                {
+                    "id": "vscodepatchapply.patchView",
+                    "name": "Apply Patch",
+                    "type": "webview",
+                    "contextualTitle": "Patch Apply"
+                }
+            ]
+        },
+        "commands": [
+            {
+                "command": "vscodepatchapply.applyDiff",
+                "title": "Apply Diff from Panel"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "pretest": "npm run compile && npm run lint",
+        "lint": "eslint src",
+        "test": "vscode-test"
+    },
+    "devDependencies": {
+        "@types/diff": "^7.0.2",
+        "@types/mocha": "^10.0.10",
+        "@types/node": "20.x",
+        "@types/vscode": "^1.100.0",
+        "@typescript-eslint/eslint-plugin": "^8.31.1",
+        "@typescript-eslint/parser": "^8.31.1",
+        "@vscode/test-cli": "^0.0.10",
+        "@vscode/test-electron": "^2.5.2",
+        "eslint": "^9.25.1",
+        "typescript": "^5.8.3"
+    },
+    "dependencies": {
+        "diff": "^8.0.1"
+    }
+}

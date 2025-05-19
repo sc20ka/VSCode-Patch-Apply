@@ -1,0 +1,50 @@
+/* media/styles.css */
+body {
+    font-family: var(--vscode-font-family);
+    color: var(--vscode-editor-foreground);
+    background-color: var(--vscode-editor-background);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Use viewport height */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+h3 {
+    margin-top: 0;
+}
+
+textarea {
+    width: 100%;
+    flex-grow: 1; /* Allow textarea to grow */
+    margin-bottom: 10px;
+    background-color: var(--vscode-input-background);
+    color: var(--vscode-input-foreground);
+    border: 1px solid var(--vscode-input-border, var(--vscode-contrastBorder, transparent));
+    padding: 5px;
+    box-sizing: border-box;
+    font-family: var(--vscode-editor-font-family, monospace); /* Use editor font for diff */
+}
+
+textarea:focus {
+    outline-color: var(--vscode-focusBorder);
+}
+
+button {
+    padding: 8px 15px;
+    background-color: var(--vscode-button-background);
+    color: var(--vscode-button-foreground);
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    width: 100%; /* Make button full width */
+}
+
+button:hover {
+    background-color: var(--vscode-button-hoverBackground);
+}
+
+.error {
+    color: var(--vscode-errorForeground);
+    margin-top: 10px;
+}

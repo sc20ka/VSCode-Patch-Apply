@@ -1,0 +1,20 @@
+{
+	"compilerOptions": {
+		"module": "Node16",
+		"target": "ES2022",
+		"outDir": "out",
+		"lib": [
+			"ES2022"
+		],
+		"sourceMap": true,
+		"rootDir": "src",
+		"strict": true,   /* enable all strict type-checking options */
+        "esModuleInterop": true, /* Enables emit interoperability between CommonJS and ES Modules */
+        "skipLibCheck": true, /* Skip type checking of declaration files. */
+        "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */
+	},
+	"exclude": [
+        "node_modules",
+        ".vscode-test"
+    ]
+}
