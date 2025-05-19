@@ -58,7 +58,13 @@
         "eslint": "^9.25.1",
         "typescript": "^5.8.3"
     },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sc20ka/VSCode-Patch-Apply.git"
+    },
+    "homepage": "https://github.com/sc20ka/VSCode-Patch-Apply.git/blob/main/README.md",
     "dependencies": {
         "diff": "^8.0.1"
-    }
+    },
+    "publisher" : "sc20ka"
 }
